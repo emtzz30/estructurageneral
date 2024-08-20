@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="emtzz">
+    <meta name="keywords" lang="es"content=etiquetas,html,pagina>
+    <meta name="description" lang="es" content="Listas de etiquetas basicas">
+    <title>Estructura General</title>
+</head>
+<body>
+    <header>
+        <h1 id="Inicio">Bienvenidos a nuestra página</h1>
+        <h3>Estructura General de proyecto</h3>
+        <a href="#inicio"><img src="img/logo.jpg" width="150" height="150" alt="logotipo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Sección principal del contenido-->
+    <main>
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>En esta sección puedes leer sobre quién soy qué hago</p>
+            <img src="img/imagen6.jpg" width="300" height="210" alt="make up">
+            <p>Video Relacioado</p>
+            <video width="500" height="400" controls src="media/istockphoto-1386037595-640_adpp_is.mp4"></video>
+            <br><br>
+            <a href="Inicio">Volver a Inicio</a>
+
+        </section>
+
+        <section id="Servicios">
+            <h2>Servicios</h2>
+            <p>Ofrecemos una gran variedad de opciones según tu necesidad y preferencia</p>
+            <img src="img/imagen 2.jpg" width="600" height="400" alt="opciones">
+            <br><br>
+            <h3>Escucha este audio</h3><br>
+            <audio controls src="media/beauty-time-126764.mp3" type="mp3"></audio>
+            <br><br>
+            <a href="Servicios">Volver a Inicio</a>
+
+        </section>
+
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto con nosotros por medio de nuestro formulario</p>
+            <div class="contenedor"></div>
+                <h2>Formulario de Contacto</h2>
+                <form action="/enviar formulario" method="post">
+                    <div class="formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" placeholder="Ingresa su nombre">
+                    </div>
+<br><br>
+                    <!--Correo Electronico-->
+                    <div class="formulario">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email"  required placeholder="tuusuario@ejemplo.com">
+                    </div>
+                    <br><br>
+
+                    <!--telefono-->
+                    <div class="formulario">
+                        <label for="telefono">telefono</label>
+                        <input type="tel" id="telefono" name="telefono"  
+                        required pattern="[0-9]{3}-[0-9]{4}[0-9]{4}" placeholder="506-4454-6523">
+                    </div>
+<br><br>
+                    <!--Asunto-->
+                    <div class="formulario">
+                        <label for="Asunto">Correo Electrónico</label>
+                        <input type="Asunto" id="Asunto" name="Asunto"  required minlength="5" maxlength="100" placeholder="Motivo de su mensaje">
+                    </div>
+                    <br><br>
+
+                     <!--Mensaje-->
+                     <div class="formulario">
+                        <label for="Mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mendaje" required minlength="10" maxlength="500" placeholder="escriba aqui su mensaje"></textarea>
+                    </div>
+                    <br><br>
+                    <!--enviar-->
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <br><br>
+            <a href="Servicios">Volver a Inicio</a>
+        </section>
+    </main>
+
+    <!--aside=barracon informacion adicional-->
+    <aside>
+        <h3>Noticias Recientes</h3>
+        <p>Ultimas actualizaciones sobremis servicios y proyectos</p>
+        <img src="img/imagen 1.jpg" width="250" height=150 alt="toy2">
+    </aside>
+    
+    <!--Pie de página-->
+    <footer>
+        <p>&copy; 2024 Mi página web. Todos los derechos reservados</p>
+        <p><a href="http://www.ina.ac.cr"></a></p> <br><br>
+        <a href="Servicios">Volver a Inicio</a>
+    </footer>
+</body>
+</html>
